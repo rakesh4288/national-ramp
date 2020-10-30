@@ -1,0 +1,20 @@
+/* Show it is fixed to the top */
+body {
+  padding-top: 4.5rem;
+}
+
+.mainBody{
+  min-height: 740px;
+}
+
+/***************** FOOTER SECTION CSS START *****************/
+
+.footer{
+  display: block;
+  background: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/***************** END OF FOOTER SECTION CSS *****************/
