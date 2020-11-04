@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+    $(".navbar-toggler").click(function () {
+        $(".navbar-toggler-icon").toggleClass("close-icon");
+    });
+
   $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
     event.preventDefault();
     event.stopPropagation();
@@ -24,5 +29,7 @@ $(document).ready(function(){
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
+
+
 
 });
