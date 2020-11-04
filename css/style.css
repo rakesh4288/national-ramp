@@ -1,6 +1,6 @@
 /***************** COMMON CSS START *****************/
 body {
-  padding-top: 5.5rem;
+  padding-top: 5.3rem;
 }
 
 .mainBody{ min-height: 740px;}
@@ -20,12 +20,21 @@ h1,h2,h3,h4,h5,h6{
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color:#28a745;
+  background-color:#477299;
   opacity: 1;
 }
 
 .text-green{
   color: #b9d339 !important;
+}
+
+.inlineList ul{ 
+  padding-left: 0; 
+  margin-bottom: 0;
+}
+
+.inlineList ul li{
+  display: inline;
 }
 
 /***************** END OF COMMON CSS *****************/
@@ -35,6 +44,37 @@ h1,h2,h3,h4,h5,h6{
 .navbar-dark{
   background-color: #012d54;
   /* box-shadow: 0px 3px 4px #888; */
+}
+
+.close-icon{
+  background-image: url('../images/close-icon.png') !important;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width:992px){
+  .admin-dropdown{
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+}
+
+.second-header{
+  background: #f8f9fa;
+  padding: 0 0 15px 0; 
+  /* box-shadow: 1px 2px 3px #888888; */
+}
+
+.national-text{
+  font-size: 16px;
+  color: rgba(0,0,0,.5);
+}
+
+.request-quote{
+  background-color: #477299;
+  color: white;
+  border-color:#477299;
 }
 
 /***************** END OF NAVBAR CSS *****************/
