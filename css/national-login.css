@@ -1,0 +1,55 @@
+.login-box{
+  width: 390px;
+  height: auto;
+  border: 3px solid #f1f1f2;
+  border-radius: 2px;
+  box-shadow: 2px 2px #f1f1f2;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 15px;
+}
+
+.login-box .logo-box{
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid #f1f1f2;
+  padding-bottom: 10px;
+}
+
+.login-box .logo-box img{
+  width: 180px;
+  height: 50px;
+}
+
+.login-box .heading{
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
+  color: #012c53;
+  font-weight: 500;
+}
+
+.login-box .form-box{
+  padding: 15px;
+}
+
+.login-box .submit-btn{
+  color: #ffffff;
+  font-weight: normal;
+  background-color: #00263E;
+  border-color: #b2292E;
+}
+
+.login-box .form-row{
+  margin-bottom: 15px;
+}
+
+.login-box .forgot{
+  color: #012c53;
+}
+
+@media screen and (max-width:768px){
+  .login-box{
+    width: 100%;
+  }
+}
