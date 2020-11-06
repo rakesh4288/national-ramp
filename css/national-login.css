@@ -48,6 +48,24 @@
   color: #012c53;
 }
 
+.firefox-box{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  text-align: right;
+}
+
+.firefox-box .content{
+  font-size: 12px;
+  color: #00263E;
+  margin-bottom: 10px;
+}
+
+.firefox-box .ff-logo{
+  width: 250px;
+  height: auto;
+}
+
 @media screen and (max-width:768px){
   .login-box{
     width: 100%;
