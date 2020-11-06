@@ -29,10 +29,7 @@
   font-weight: 500;
 }
 
-.login-box .form-box{
-  padding: 15px;
-}
-
+.login-box .form-box{ padding: 15px;}
 .login-box .submit-btn{
   color: #ffffff;
   font-weight: normal;
@@ -40,19 +37,17 @@
   border-color: #b2292E;
 }
 
-.login-box .form-row{
-  margin-bottom: 15px;
-}
-
-.login-box .forgot{
-  color: #012c53;
-}
+.login-box .form-row{ margin-bottom: 15px;}
+.login-box .forgot{ color: #012c53;}
 
 .firefox-box{
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-  text-align: right;
+  /* position: relative;
+  top: 0;
+  bottom: 0;
+  right: -90px;
+  text-align: right; */
+  float: right;
+  margin-top: 100px;
 }
 
 .firefox-box .content{
@@ -66,8 +61,31 @@
   height: auto;
 }
 
-@media screen and (max-width:768px){
-  .login-box{
-    width: 100%;
+@media screen and (max-width:767px){
+  .login-box{ width: 100%;}
+  .firefox-box {
+    position: relative;
+    top: 20px;
+    bottom: 0;
+    right: 0;
+    text-align: right;
   }
+}
+
+@media screen and (max-width:850px) and (orientation:landscape){
+  .firefox-box {
+    top: 18px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+  /* .firefox-box {
+    position: relative;
+    top: 30px;
+    bottom: 0;
+    right: -15px;
+    text-align: right;
+  } */
 }
