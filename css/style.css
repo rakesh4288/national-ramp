@@ -1,9 +1,19 @@
 /***************** COMMON CSS START *****************/
 body {
   padding-top: 5.3rem;
+  position: relative;
 }
 
-.mainBody{ min-height: 740px;}
+.mainBody{ 
+  min-height: 540px;
+  background: url('../images/back-image.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 800px;
+  background-size: cover;
+  padding: 20px 0;
+}
+
 h1,h2,h3,h4,h5,h6{
   color: #28a745;
 }
@@ -34,12 +44,17 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .inlineList ul li{
-  display: inline;
+  display: inline-block;
+}
+
+@media screen and (max-width:767px){
+  body {
+    padding-top: 11rem;
+  }
 }
 
 /***************** END OF COMMON CSS *****************/
 
-/***************** NAVBAR CSS START *****************/
 
 .navbar-dark{
   background-color: #012d54;
@@ -59,34 +74,125 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom: 15px;
   }
 }
+.topMenu{
+  display: block;
+  width: 100%;
+  position: fixed;
+  background-color: #012d54;
+  padding: 15px 0;
+  height: auto;
+  top: 0;
+  z-index: 999;
+}
+
+.topMenu .inlineList{
+  padding-top: 10px;
+}
+
+
+/***************** SECOND HEADER CSS START *****************/
 
 .second-header{
   background: #f8f9fa;
-  padding: 0 0 15px 0; 
-  /* box-shadow: 1px 2px 3px #888888; */
+  padding: 15px 0; 
+  box-shadow: 1px 0px 2px #888888;
+  margin-bottom: 3px;
 }
 
-.national-text{
-  font-size: 16px;
+.second-header .container{
+  max-width: 980px;
+}
+
+.second-header .national-text{
+  font-size: 18px;
   color: rgba(0,0,0,.5);
+  font-weight:bold;
+  line-height: 22px;
 }
 
-.request-quote{
-  background-color: #477299;
-  color: white;
-  border-color:#477299;
+.second-header .project-name{
+  font-size: 18px;
+  font-weight: bold;
+  color: #b9d339;
+  line-height: 22px;
 }
 
-/***************** END OF NAVBAR CSS *****************/
+.second-header .inlineList ul li{
+  padding-left: 10px;
+}
+
+.second-header .inlineList ul li:first-child{
+  padding-left: 0;
+}
+
+.second-header .inlineList ul li::after{
+  content: "|";
+  font-size: 18px;
+}
+
+.second-header .inlineList ul li:last-child::after{
+  content: "";
+}
+
+@media screen and (max-width:767px){
+  .second-header .national-text{
+    font-size: 16px;
+  }
+  
+  .second-header .project-name{
+    font-size: 16px;
+  }
+
+  .second-header .inlineList ul li{
+    display: block;
+  }
+
+  .second-header .inlineList ul li{
+    padding-left: 0;
+  }
+}
+
+/***************** END OF SECOND HEADER CSS *****************/
+
+/***************** THIRD HEADER CSS START *****************/
+
+.third-header{
+  /* background: #f3f5f7; */
+  background: #fffbfb;
+  padding: 0px 0 5px 0; 
+  /* box-shadow: 1px 0px 2px #888888; */
+}
+
+.third-header .container{
+  max-width: 980px;
+}
+
+.third-header .inlineList ul li{
+  padding-left: 15px;
+}
+
+.third-header .inlineList ul li:first-child{
+  padding-left: 0;
+}
+
+.third-header .dropdown{
+  padding-left: 0;
+}
+
+/***************** END OF THIRD HEADER CSS *****************/
 
 /***************** FOOTER SECTION CSS START *****************/
 
 .footer{
   display: block;
-  background: #343a40;
-  color: #ffffff;
-  text-align: center;
+  background: #ffffff;
+  color: #252525;
+  text-align: left;
   padding: 10px 0;
+}
+
+.footer .container{
+  max-width: 980px;
 }
 
 /***************** END OF FOOTER SECTION CSS *****************/
@@ -115,7 +221,17 @@ h1,h2,h3,h4,h5,h6{
 
 
 
+
+
+
+
+
+
 /* ********************************************* */
+#sidebarCollapse{
+  position: absolute;
+  top: 30%;
+}
 
 .sidebarIcon{
   position: absolute;
@@ -124,9 +240,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #sidebar {
-  width: 250px;
+  width: 200px;
   position: fixed;
-  top: 0;
+  top: 13%;
   left: -250px;
   height: 100vh;
   z-index: 9999;
@@ -135,7 +251,7 @@ h1,h2,h3,h4,h5,h6{
   transition: all 0.3s;
   overflow-y: scroll;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  padding: 10px;
+  padding: 0;
 }
 
 #sidebar.active { left: 0;}
@@ -176,21 +292,54 @@ h1,h2,h3,h4,h5,h6{
   opacity: 1;
 }
 
-/* #sidebar ul.components {
-  padding: 20px 0;
-  border-bottom: 1px solid #47748b;
+.side-icon{
+  background: #012d54;
+  color: white;
+  border: none;
+  padding: 17px 10px 17px 10px;
+  border-radius: 0px 10px 10px 0px;
 }
 
+.icon-rotate {
+  transform: rotate(180deg);
+}
 
-#sidebar ul li a {
-  color: azure;
-  padding: 10px;
+.menu-btn{
+  background-color: #012d54;
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  text-align: left;
+  padding: 2px 5px 5px 10px;
+  font-size: 13px;
+  font-weight: normal;
+  
+}
+
+.menu-btn:focus{
+  outline: none;
+}
+
+.menu-icon{
+  float: right;
+  margin-top: 5px;
+}
+
+.sub-menu-btn{
+  background-color: #337ab7;
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
   font-size: 14px;
-  display: block;
+  margin-bottom: 5px;
+  border: none;
 }
 
-#sidebar ul li a:hover {
-  color: #7386D5;
-  background: #fff;
-  text-decoration: none;
-} */
+.sub-menu-btn:focus{
+  outline: none;
+}
+
+#sidebar-wrapper{
+  padding-top: 50px;
+}
