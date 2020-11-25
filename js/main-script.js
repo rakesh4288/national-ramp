@@ -36,4 +36,8 @@ $(document).ready(function(){
         $(".third-header").slideToggle();
     });
 
+    $("#up-arrow-icon").click(function(){
+        $("#footer-section").slideToggle();
+    });
+
 });
