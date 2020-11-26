@@ -1,6 +1,6 @@
 /***************** COMMON CSS START *****************/
 body {
-  padding-top: 5.3rem;
+  padding-top: 4.8rem;
   position: relative;
 }
 
@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6{
 
 @media screen and (max-width:767px){
   body {
-    padding-top: 10.7rem;
+    padding-top: 7.9rem;
   }
 }
 
@@ -199,16 +199,48 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-.down-icon{
-  position: relative;
+.down-icon{ position: relative;}
+.arrow-icon-down{
+  transform: rotate(90deg) !important;
 }
 
-.down-icon .side-icon{
+.arrow-icon-up{
+  background: #012d54;
+  color: white;
+  border: none;
+  padding: 17px 10px 17px 10px;
+  border-radius: 8px;
+
   position: absolute;
   left: 50%;
-  transform: rotate(90deg);
   top: 0;
   margin-top: -11px;
+  outline: none;
+  transform: rotate(-90deg);
+}
+
+.arrow-icon-down:focus,.arrow-icon-down:focus{
+  outline: none;
+}
+
+.footer-arrow-icon-up{
+  transform: rotate(-90deg) !important;
+}
+
+.footer-arrow-icon-down{
+  background: #012d54;
+  color: white;
+  border: none;
+  padding: 17px 10px 17px 10px;
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: -47px;
+  outline: none;
+  transform: rotate(90deg);
+}
+
+.footer-arrow-icon-down:focus, .footerarrow-icon-down:focus{
   outline: none;
 }
 
@@ -253,7 +285,8 @@ h1,h2,h3,h4,h5,h6{
 
 /* ********************************************* */
 #sidebarCollapse{
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 30%;
 }
 
@@ -264,9 +297,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #sidebar {
-  width: 200px;
+  width: 230px;
   position: fixed;
-  top: 13%;
+  top: 12%;
   left: -250px;
   height: 100vh;
   z-index: 9999;
@@ -329,6 +362,10 @@ h1,h2,h3,h4,h5,h6{
   transform: rotate(180deg);
 }
 
+@media screen and (max-width:767px){
+  
+}
+
 .menu-btn{
   background-color: #012d54;
   color: white;
@@ -381,4 +418,80 @@ h1,h2,h3,h4,h5,h6{
   top: 0;
   margin-top: -47px;
   outline: none;
+}
+
+/* this is switch button code */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #b9d339;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #b9d339;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#display-img
+{
+  width: 100%;
+  height: 80vh;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 10px;
+  color: black;
+  font-size: 13px;
 }
