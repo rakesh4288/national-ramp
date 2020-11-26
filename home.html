@@ -152,7 +152,7 @@
   <!-- END OF THIRD HEADER HERE -->
 
   <div class="down-icon">
-    <button type="button" id="down-arrow-icon" class="side-icon">
+    <button type="button" id="topToggle" class="arrow-icon-up">
         <svg id="icon-right" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill icon-rotate" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
         </svg>
@@ -175,46 +175,11 @@
             <div id="overflow-wrapper" class="overflow-auto">
                 <div class="list-group list-group-flush">
                     <div class="accordion" id="accordionExample">
-                        <div class="list-group-item">
-                            
-                                <!-- Menu option 1 -->
-                                <button id="menu1" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    Double Platforms
-                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                                    </svg>
-                                </button>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="">
-                                    <div class="card-body">
-                                        <button class="sub-menu-btn">4x8 Platform</button>
-                                        <button class="sub-menu-btn">5x8 Platform</button>
-                                        <button class="sub-menu-btn">5x10 Platform</button>
-                                    </div>
-                                </div>
-                        
-                        </div>
-
-                        <div class="list-group-item">
-                        <!-- Menu option 2 -->
-                        <button id="menu2" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Single Platforms
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon menu-icon-rotate" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                            </svg>
-                        </button>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <button class="sub-menu-btn">Item 1</button>
-                                <button class="sub-menu-btn">Item 2</button>
-                                <button class="sub-menu-btn">Item 3</button>
-                            </div>
-                        </div>
-                        </div>
 
                         <div class="list-group-item">
                             <!-- Menu option 3 -->
                             <button id="menu3" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Pie Platforms
+                                Platforms
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
                                 </svg>
@@ -230,39 +195,30 @@
 
                         <div class="list-group-item">
                             <!-- Menu option 4 -->
-                            <button id="menu4" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <button id="menu4" class="menu-btn collapsed" type="button">
                                 Ramps
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                                </svg>
                             </button>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <button class="sub-menu-btn">Item 1</button>
-                                    <button class="sub-menu-btn">Item 2</button>
-                                    <button class="sub-menu-btn">Item 3</button>
-                                </div>
-                            </div>
                         </div>
 
                         <div class="list-group-item">
                             <!-- Menu option 5 -->
                             <button id="menu5" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Grid
+                                Landing Pad
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
                                 </svg>
                             </button>
+
                             <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div align="center">
-                                        <img src="data/images/grid.jpg" class="img-fluid" height="60" width="60" alt="">
+                                        <img src="images/pad.png" class="img-fluid" height="50" width="50" alt="">
                                         <span>Enabled:
                                             <label class="switch">
                                                 <input type="checkbox" checked="">
                                                 <span class="slider round"></span>
                                             </label>
-                                                </span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -271,7 +227,7 @@
                         <div class="list-group-item">
                             <!-- Menu option 6 -->
                             <button id="menu6" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                Axis
+                                Others
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
                                 </svg>
@@ -279,22 +235,43 @@
                             <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div align="center">
-                                        <img src="data/images/axis.png" class="img-fluid" height="40" width="40" alt="">
-                                        <span>Enabled:
+                                        <span>Entrance End Loop:
                                             <label class="switch">
                                                 <input type="checkbox" checked="">
                                                 <span class="slider round"></span>
                                             </label>
-                                                </span>
+                                        </span>
                                     </div>
                                 </div>
+
+                                <div class="card-body">
+                                    <div align="center">
+                                        <span>Harrican Tile:
+                                            <label class="switch">
+                                                <input type="checkbox" checked="">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                        <div align="center">
+                                            <span>Footer Pad:
+                                                <label class="switch">
+                                                    <input type="checkbox" checked="">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
 
                         <div class="list-group-item">
                             <!-- Menu option 7 -->
                             <button id="menu7" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                Entrance End Loops
+                                Fees
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
                                 </svg>
@@ -302,36 +279,23 @@
                             <div id="collapseSeven" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div align="center">
-                                        <img src="data/images/loop.png" class="img-fluid" height="50" width="50" alt="">
-                                        <span>Disable:
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider round"></span>
-                                            </label>
-                                                </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="list-group-item">
-                            <!-- Menu option 8 -->
-                            <button id="menu8" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                Landing Pad
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                                </svg>
-                            </button>
-                            <div id="collapseEight" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <div align="center">
-                                        <img src="data/images/pad.png" class="img-fluid" height="50" width="50" alt="">
-                                        <span>Enabled:
+                                        <span>Installation:
                                             <label class="switch">
                                                 <input type="checkbox" checked="">
                                                 <span class="slider round"></span>
                                             </label>
-                                                </span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <div align="center">
+                                        <span>Permit Admin:
+                                            <label class="switch">
+                                                <input type="checkbox" checked="">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -357,7 +321,7 @@
 
   <!-- FOOTER SECTION START HERE -->
   <div class="footer-collapse">
-    <button type="button" id="up-arrow-icon" class="side-icon">
+    <button type="button" id="footerToggle" class="footer-arrow-icon-down">
         <svg id="icon-right" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill icon-rotate" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
         </svg>
