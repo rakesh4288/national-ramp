@@ -31,13 +31,15 @@ $(document).ready(function(){
     });
 
 
-    $("#down-arrow-icon").click(function(){
+    $("#topToggle").click(function(){
         $(".second-header").slideToggle();
         $(".third-header").slideToggle();
+        $(this).toggleClass("arrow-icon-down");
     });
 
-    $("#up-arrow-icon").click(function(){
+    $("#footerToggle").click(function(){
         $("#footer-section").slideToggle();
+        $(this).toggleClass("footer-arrow-icon-up");
     });
 
 });
